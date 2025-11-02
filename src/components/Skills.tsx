@@ -17,9 +17,9 @@ const skillCategories = [
     title: 'Web & Mobile',
     icon: Smartphone,
     items: [
-      { name: 'React / TypeScript', level: 88, years: 5 },
+      { name: 'Laravel', level: 90, years: 6 },
       { name: 'Flutter', level: 76, years: 4 },
-      { name: 'Laravel / Node', level: 80, years: 5 }
+      { name: 'React / Angular / TypeScript / Node', level: 65, years: 3 },
     ]
   },
   {
@@ -28,8 +28,8 @@ const skillCategories = [
     icon: Server,
     items: [
       { name: 'APIs & Microservices', level: 82, years: 5 },
-      { name: 'Postgres / MySQL', level: 78, years: 5 },
-      { name: 'Redis / MongoDB', level: 70, years: 3 }
+      { name: 'MySQL / Postgres ', level: 78, years: 5 },
+      { name: 'MongoDB / Firebase / Supabase', level: 70, years: 3 }
     ]
   },
   {
@@ -37,7 +37,7 @@ const skillCategories = [
     title: 'DevOps & Tooling',
     icon: Code,
     items: [
-      { name: 'Docker & CI/CD', level: 80, years: 4 },
+      { name: 'Docker & CI/CD', level: 75, years: 3 },
       { name: 'Observability', level: 72, years: 2 }
     ]
   },
@@ -46,7 +46,7 @@ const skillCategories = [
     title: 'UI/UX & Product',
     icon: Layout,
     items: [
-      { name: 'Design Systems', level: 70, years: 3 },
+      { name: 'Design Systems', level: 80, years: 5 },
       { name: 'Accessibility', level: 68, years: 3 }
     ]
   },
@@ -55,8 +55,8 @@ const skillCategories = [
     title: 'Databases',
     icon: Database,
     items: [
-      { name: 'MySQL / Postgres', level: 78, years: 5 },
-      { name: 'MongoDB', level: 68, years: 3 }
+      { name: 'MySQL / Postgres ', level: 78, years: 5 },
+      { name: 'MongoDB / Firebase / Supabase', level: 70, years: 3 }
     ]
   }
 ];
