@@ -1,3 +1,4 @@
+import Nav from './components/Nav';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Experience } from './components/Experience';
@@ -7,13 +8,16 @@ import { Contact } from './components/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-      <Hero />
-      <About />
-      <Experience />
-      <Skills />
-      <Education />
-      <Contact />
+    <div className="min-h-screen bg-[color:var(--bg)] text-[color:var(--text)]">
+      <Nav />
+      <main className="container mx-auto px-4">
+        <Hero />
+        <About />
+        <Experience />
+        <Skills />
+        <Education />
+        <Contact />
+      </main>
     </div>
   );
 }

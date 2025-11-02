@@ -1,16 +1,18 @@
 export function About() {
   return (
-    <section id="about" className="py-20 px-4">
+    <section id="about" className="py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
-          About Me
-        </h2>
-        <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700">
-          <p className="text-slate-300 text-lg leading-relaxed">
-            Experienced Full-Stack Software Engineer with 6+ years of expertise in building scalable web and mobile applications using Flutter, Laravel, React, Angular, and Node.js. Proven track record in delivering robust solutions across healthcare, e-commerce, and finance sectors.
+        <header className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 dark:text-white">About Me</h2>
+          <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">Summary of experience and focus areas</p>
+        </header>
+
+        <div className="bg-white dark:bg-slate-800 rounded-lg p-8 shadow-card border border-slate-100 dark:border-slate-700">
+          <p className="text-slate-700 dark:text-slate-200 text-lg leading-relaxed">
+            Experienced Full-Stack Software Engineer with 6+ years of expertise building scalable web and mobile applications using Flutter, Laravel, React, Angular, and Node.js. I focus on creating reliable, maintainable systems and delivering measurable business value through software.
           </p>
-          <p className="text-slate-300 text-lg leading-relaxed mt-6">
-            Specialized in AI integration, cloud infrastructure (AWS), RESTful APIs, and DevOps practices (CI/CD, Docker). Passionate about clean code, performance optimization, and intuitive UI/UX. Adept at leading end-to-end development and delivering high-quality software on time and within budget.
+          <p className="text-slate-700 dark:text-slate-200 text-lg leading-relaxed mt-6">
+            My work emphasizes AI-enabled features, cloud-first infrastructure (AWS), robust REST APIs, and pragmatic DevOps (CI/CD, Docker). I care about clean code, accessible UIs, and high-performing user experiences.
           </p>
         </div>
       </div>

@@ -34,42 +34,43 @@ const experiences = [
 
 export function Experience() {
   return (
-    <section id="experience" className="py-20 px-4 bg-slate-900/50">
+    <section id="experience" className="py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
-          Experience
-        </h2>
-        <div className="space-y-8">
+        <header className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 dark:text-white">Experience</h2>
+          <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">Selected roles & responsibilities</p>
+        </header>
+
+        <div className="space-y-6">
           {experiences.map((exp, index) => (
-            <div
+            <article
               key={index}
-              className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 hover:border-blue-500/50 transition-all"
+              className="bg-white dark:bg-slate-800 rounded-lg p-6 border border-slate-100 dark:border-slate-700 shadow-card hover:shadow-md transition-shadow"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-blue-500/10 text-blue-400">
+                <div className="p-3 rounded-lg bg-primary-50 text-primary-600">
                   <Briefcase className="w-6 h-6" />
                 </div>
                 <div className="flex-1">
-                  <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
+                  <div className="flex flex-wrap items-start justify-between gap-4 mb-3">
                     <div>
-                      <h3 className="text-2xl font-bold text-white mb-1">
-                        {exp.title}
-                      </h3>
-                      <p className="text-blue-400 font-medium">{exp.company}</p>
+                      <h3 className="text-xl md:text-2xl font-semibold text-slate-900 dark:text-white">{exp.title}</h3>
+                      <p className="text-sm text-slate-600 dark:text-slate-300">{exp.company}</p>
                     </div>
-                    <span className="text-slate-400 text-sm">{exp.period}</span>
+                    <span className="text-sm text-slate-500 dark:text-slate-400">{exp.period}</span>
                   </div>
-                  <ul className="space-y-3">
+
+                  <ul className="space-y-2 text-slate-700 dark:text-slate-200">
                     {exp.responsibilities.map((resp, idx) => (
-                      <li key={idx} className="text-slate-300 flex items-start gap-2">
-                        <span className="text-blue-400 mt-1">•</span>
+                      <li key={idx} className="flex items-start gap-3">
+                        <span className="mt-1 w-2 h-2 rounded-full bg-primary-600 dark:bg-primary-600" />
                         <span>{resp}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

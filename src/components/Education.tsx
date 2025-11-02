@@ -20,34 +20,34 @@ const education = [
 
 export function Education() {
   return (
-    <section id="education" className="py-20 px-4 bg-slate-900/50">
+    <section id="education" className="py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
-          Education
-        </h2>
-        <div className="space-y-6">
+        <header className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 dark:text-white">Education</h2>
+          <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">Academic background and certifications</p>
+        </header>
+
+        <div className="space-y-4">
           {education.map((edu, index) => (
-            <div
+            <article
               key={index}
-              className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700 hover:border-blue-500/50 transition-all"
+              className="bg-white dark:bg-slate-800 rounded-lg p-5 border border-slate-100 dark:border-slate-700 shadow-card hover:shadow-md transition-shadow"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-lg bg-blue-500/10 text-blue-400">
+                <div className="p-3 rounded-lg bg-primary-50 text-primary-600">
                   <GraduationCap className="w-6 h-6" />
                 </div>
                 <div className="flex-1">
-                  <div className="flex flex-wrap items-start justify-between gap-4">
+                  <div className="flex items-start justify-between gap-4">
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-2">
-                        {edu.institution}
-                      </h3>
-                      <p className="text-slate-300">{edu.degree}</p>
+                      <h3 className="text-lg font-semibold text-slate-900 dark:text-white">{edu.institution}</h3>
+                      <p className="text-slate-700 dark:text-slate-200">{edu.degree}</p>
                     </div>
-                    <span className="text-blue-400 font-medium">{edu.year}</span>
+                    <span className="text-sm text-slate-500 dark:text-slate-400">{edu.year}</span>
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

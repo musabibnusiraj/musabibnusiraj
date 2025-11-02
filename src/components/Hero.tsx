@@ -1,66 +1,58 @@
-import { Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, Brain, Globe, Smartphone } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20">
-      <div className="max-w-6xl w-full">
-        <div className="text-center space-y-8">
-          <div className="inline-block">
-            <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 p-1">
-              <div className="w-full h-full rounded-full overflow-hidden">
-                <img
-                  src="/3.png"
-                  alt="M. Siraj Musab"
-                  className="w-full h-full object-cover"
-                />
+    <section className="py-16">
+      <div className="max-w-4xl mx-auto">
+        <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-primary-600 to-slate-700 text-white p-10 shadow-card">
+          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-white to-transparent pointer-events-none"></div>
+          <div className="flex flex-col md:flex-row md:flex-row-reverse items-center gap-8 relative">
+            <div className="flex-shrink-0">
+              <div className="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden ring-4 ring-white/30">
+                <img src="/3.png" alt="Musab Ibnu Siraj" className="w-full h-full object-cover" loading="eager" />
               </div>
             </div>
-          </div>
 
-          <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-bold text-white">
-              M. S. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Musab</span>
-            </h1>
-            <p className="text-2xl md:text-3xl text-blue-300 font-light">
-              Senior Full-Stack Software Engineer
-            </p>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-              6+ years of expertise in building scalable applications with modern technologies
-            </p>
-          </div>
+            <div className="flex-1 text-left md:text-left">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold">Senior Full-Stack Engineer</h1>
 
-          <div className="flex flex-wrap justify-center gap-6 text-slate-300">
-            <a href="mailto:musab.dot@gmail.com" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
-              <Mail className="w-5 h-5" />
-              <span>musab.dot@gmail.com</span>
-            </a>
-            <a href="tel:+94755513162" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
-              <Phone className="w-5 h-5" />
-              <span>+94755513162</span>
-            </a>
-            <div className="flex items-center gap-2">
-              <MapPin className="w-5 h-5" />
-              <span>Puttalam, Sri Lanka</span>
+              <div className="mt-3 flex items-center flex-wrap gap-3">
+                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-sm font-medium">
+                  <Brain className="w-4 h-4" />
+                  AI
+                </span>
+                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-sm font-medium">
+                  <Globe className="w-4 h-4" />
+                  Web
+                </span>
+                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-sm font-medium">
+                  <Smartphone className="w-4 h-4" />
+                  Mobile
+                </span>
+
+
+                <p className="text-white/95 text-base md:text-lg lg:text-xl font-medium">building reliable products at scale</p>
+              </div>
+
+              <p className="mt-4 text-white/90 max-w-xl">I design and ship production-ready systems using TypeScript, React, Node, Flutter, Laravel and AWS. I focus on performance, observability, and developer experience.</p>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a href="mailto:musab.dot@gmail.com" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-white text-slate-900 font-medium hover:opacity-95">
+                  <Mail className="w-4 h-4" />
+                  Email
+                </a>
+
+                <a href="https://linkedin.com/in/musab-ibnu-siraj" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-white/10 border border-white/20 hover:bg-white/20">
+                  <Linkedin className="w-4 h-4" />
+                  LinkedIn
+                </a>
+
+                <a href="https://github.com/musabibnusiraj" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-white/10 border border-white/20 hover:bg-white/20">
+                  <Github className="w-4 h-4" />
+                  GitHub
+                </a>
+              </div>
             </div>
-          </div>
-
-          <div className="flex justify-center gap-4 pt-4">
-            <a
-              href="https://linkedin.com/in/musab-ibnu-siraj"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-slate-800 hover:bg-blue-600 transition-all hover:scale-110 text-white"
-            >
-              <Linkedin className="w-6 h-6" />
-            </a>
-            <a
-              href="https://github.com/musabibnusiraj"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full bg-slate-800 hover:bg-blue-600 transition-all hover:scale-110 text-white"
-            >
-              <Github className="w-6 h-6" />
-            </a>
           </div>
         </div>
       </div>

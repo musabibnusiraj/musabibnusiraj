@@ -1,80 +1,126 @@
 import { Brain, Code, Database, Layout, Server, Smartphone } from 'lucide-react';
+import { useState } from 'react';
 
 const skillCategories = [
   {
-    title: 'AI & Cloud Computing',
+    id: 'ai',
+    title: 'AI & Cloud',
     icon: Brain,
-    skills: [
-      'AI Integration',
-      'AWS (EC2, S3, RDS, CodeCommit)',
-      'Cloud-based Deployments',
-      'Infrastructure Management'
+    items: [
+      { name: 'AI Integration', level: 85, years: 3 },
+      { name: 'AWS (EC2, S3, RDS)', level: 80, years: 4 },
+      { name: 'Cloud Deployments', level: 78, years: 4 }
     ]
   },
   {
-    title: 'Mobile & Web Development',
+    id: 'web',
+    title: 'Web & Mobile',
     icon: Smartphone,
-    skills: ['Laravel', 'Flutter', 'React', 'Node.js']
-  },
-  {
-    title: 'Software Architecture',
-    icon: Server,
-    skills: [
-      'RESTful APIs & Microservices',
-      'Scalable & Secure Development',
-      'Performance Optimization'
+    items: [
+      { name: 'React / TypeScript', level: 88, years: 5 },
+      { name: 'Flutter', level: 76, years: 4 },
+      { name: 'Laravel / Node', level: 80, years: 5 }
     ]
   },
   {
+    id: 'arch',
+    title: 'Architecture & DB',
+    icon: Server,
+    items: [
+      { name: 'APIs & Microservices', level: 82, years: 5 },
+      { name: 'Postgres / MySQL', level: 78, years: 5 },
+      { name: 'Redis / MongoDB', level: 70, years: 3 }
+    ]
+  },
+  {
+    id: 'devops',
+    title: 'DevOps & Tooling',
+    icon: Code,
+    items: [
+      { name: 'Docker & CI/CD', level: 80, years: 4 },
+      { name: 'Observability', level: 72, years: 2 }
+    ]
+  },
+  {
+    id: 'uiux',
     title: 'UI/UX & Product',
     icon: Layout,
-    skills: [
-      'Git, GitHub, GitLab, Bitbucket',
-      'User-Centric Development',
-      'Accessibility'
+    items: [
+      { name: 'Design Systems', level: 70, years: 3 },
+      { name: 'Accessibility', level: 68, years: 3 }
     ]
   },
   {
-    title: 'DevOps & Tools',
-    icon: Code,
-    skills: ['Docker', 'CI/CD Pipelines', 'CodeCommit']
-  },
-  {
+    id: 'data',
     title: 'Databases',
     icon: Database,
-    skills: ['MySQL', 'PostgreSQL', 'MongoDB', 'Redis']
+    items: [
+      { name: 'MySQL / Postgres', level: 78, years: 5 },
+      { name: 'MongoDB', level: 68, years: 3 }
+    ]
   }
 ];
 
 export function Skills() {
+  const [filter, setFilter] = useState<'all' | string>('all');
+
+  const filtered = filter === 'all' ? skillCategories : skillCategories.filter((c) => c.id === filter);
+
   return (
-    <section id="skills" className="py-20 px-4">
+    <section id="skills" className="py-16 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-white mb-12 text-center">
-          Skills & Expertise
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skillCategories.map((category, index) => {
+        <header className="flex flex-col md:flex-row items-start md:items-center justify-between mb-6">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-semibold text-slate-900">Skills & Expertise</h2>
+            <p className="mt-1 text-sm text-slate-500">Proficiency levels and years of experience</p>
+          </div>
+
+          <div className="mt-4 md:mt-0 flex flex-wrap items-center gap-2">
+            <button
+              onClick={() => setFilter('all')}
+              className={`px-4 py-2 rounded-md text-sm font-medium focus:outline-none ${filter === 'all' ? 'bg-primary-600 text-white' : 'bg-white/90 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-100 dark:border-slate-800'}`}
+              aria-pressed={filter === 'all'}
+            >
+              All
+            </button>
+            {skillCategories.map((c) => (
+              <button
+                key={c.id}
+                onClick={() => setFilter(c.id)}
+                className={`px-4 py-2 rounded-md text-sm font-medium focus:outline-none ${filter === c.id ? 'bg-primary-600 text-white' : 'bg-white/90 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-100 dark:border-slate-800'}`}
+                aria-pressed={filter === c.id}
+              >
+                {c.title}
+              </button>
+            ))}
+          </div>
+        </header>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {filtered.map((category) => {
             const Icon = category.icon;
             return (
-              <div
-                key={index}
-                className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 border border-slate-700 hover:border-blue-500/50 transition-all hover:scale-105"
-              >
+              <div key={category.id} className="bg-white rounded-lg p-6 border border-slate-100 shadow-card">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 rounded-lg bg-blue-500/10 text-blue-400">
+                  <div className="p-2 rounded-lg bg-primary-50 text-primary-600">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-bold text-white">{category.title}</h3>
+                  <h3 className="text-lg font-semibold text-slate-900">{category.title}</h3>
                 </div>
-                <ul className="space-y-2">
-                  {category.skills.map((skill, idx) => (
-                    <li key={idx} className="text-slate-300 flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
-                      <span>{skill}</span>
-                    </li>
+
+                <div className="space-y-4">
+                  {category.items.map((it) => (
+                    <div key={it.name}>
+                      <div className="flex items-center justify-between mb-1">
+                        <div className="text-sm text-slate-700 font-medium">{it.name}</div>
+                        <div className="text-xs text-slate-500">{it.years} yr</div>
+                      </div>
+                      <div className="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-3">
+                        <div className="h-3 rounded-full bg-primary-600 dark:bg-primary-600 transition-all" style={{ width: `${it.level}%` }} />
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             );
           })}
