@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Brain, Globe, Smartphone } from 'lucide-react';
+import { Github, Linkedin, Mail, Brain, Globe, Smartphone, Facebook } from 'lucide-react';
 
 export function Hero() {
   return (
@@ -57,6 +57,11 @@ export function Hero() {
                 <a href="https://github.com/musabibnusiraj" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-white/10 border border-white/20 hover:bg-white/20">
                   <Github className="w-4 h-4" />
                   GitHub
+                </a>
+
+                <a href="https://web.facebook.com/musabibnusiraj" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-white/10 border border-white/20 hover:bg-white/20">
+                  <Facebook className="w-4 h-4" />
+                  Facebook
                 </a>
               </div>
             </div>

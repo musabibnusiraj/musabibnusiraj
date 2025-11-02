@@ -21,7 +21,7 @@ export function Nav() {
                         <a href="#contact" className="px-3 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600">Contact</a>
                     </nav>
 
-                    <a href="/resume.pdf" className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary-600 text-white hover:bg-primary-700">Resume</a>
+                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary-600 text-white hover:bg-primary-700">Resume</a>
 
                     <div className="md:hidden">
                         <button
@@ -50,7 +50,7 @@ export function Nav() {
                             <a href="#skills" onClick={() => setOpen(false)} className="px-3 py-2 rounded-md text-slate-800 dark:text-white">Skills</a>
                             <a href="#projects" onClick={() => setOpen(false)} className="px-3 py-2 rounded-md text-slate-800 dark:text-white">Projects</a>
                             <a href="#contact" onClick={() => setOpen(false)} className="px-3 py-2 rounded-md text-slate-800 dark:text-white">Contact</a>
-                            <a href="/resume.pdf" className="mt-2 inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary-600 text-white">Resume</a>
+                            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary-600 text-white">Resume</a>
                             <div className="mt-3 flex items-center justify-between">
                                 <span className="text-sm text-slate-600 dark:text-slate-400">Theme</span>
                                 <ThemeToggle />

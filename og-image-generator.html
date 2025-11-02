@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG Image Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f3f4f6;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #og-image {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Grid Pattern */
+        .grid {
+            position: absolute;
+            inset: 0;
+            opacity: 0.1;
+            background-image:
+                repeating-linear-gradient(0deg, transparent, transparent 156px, rgba(255, 255, 255, 0.5) 156px, rgba(255, 255, 255, 0.5) 157px),
+                repeating-linear-gradient(90deg, transparent, transparent 299px, rgba(255, 255, 255, 0.5) 299px, rgba(255, 255, 255, 0.5) 300px);
+        }
+
+        /* Accent Bar */
+        .accent-bar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8px;
+            height: 100%;
+            background: linear-gradient(180deg, #0b61ff 0%, #06b6d4 100%);
+        }
+
+        /* Code Decoration */
+        .code-decoration {
+            position: absolute;
+            right: 80px;
+            top: 40px;
+            font-family: 'Courier New', monospace;
+            font-size: 180px;
+            font-weight: bold;
+            color: #0b61ff;
+            opacity: 0.15;
+            line-height: 1;
+        }
+
+        /* Content */
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .name {
+            font-size: 72px;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .title {
+            font-size: 42px;
+            font-weight: 600;
+            background: linear-gradient(90deg, #60a5fa 0%, #22d3ee 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .tagline {
+            font-size: 28px;
+            font-weight: 400;
+            color: #94a3b8;
+            line-height: 1.4;
+        }
+
+        .tech-stack {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .tech-pill {
+            padding: 12px 28px;
+            border-radius: 25px;
+            background: rgba(11, 97, 255, 0.2);
+            border: 2px solid #0b61ff;
+            font-size: 20px;
+            font-weight: 600;
+            color: #60a5fa;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 60px;
+            left: 80px;
+            right: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .experience {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+
+        .experience::before {
+            content: '';
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #0b61ff;
+        }
+
+        .website {
+            font-size: 20px;
+            font-weight: 500;
+            color: #64748b;
+        }
+
+        .instructions {
+            margin-top: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+        }
+
+        .instructions h2 {
+            color: #0f172a;
+            margin-bottom: 10px;
+        }
+
+        .instructions p {
+            color: #475569;
+            line-height: 1.6;
+        }
+
+        .instructions ol {
+            margin: 15px 0;
+            padding-left: 20px;
+            color: #475569;
+        }
+
+        .instructions li {
+            margin: 8px 0;
+        }
+
+        .instructions code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="og-image">
+            <div class="grid"></div>
+            <div class="accent-bar"></div>
+            <div class="code-decoration">&lt;/&gt;</div>
+
+            <div class="content">
+                <div class="name">Musab Ibn Siraj</div>
+                <div class="title">Senior Software Engineer</div>
+                <div class="tagline">AI, Web & Mobile — building reliable products at scale</div>
+
+                <div class="tech-stack">
+                    <div class="tech-pill">TypeScript</div>
+                    <div class="tech-pill">React</div>
+                    <div class="tech-pill">Flutter</div>
+                    <div class="tech-pill">AWS</div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="experience">6+ Years Experience</div>
+                <div class="website">musabibnusiraj.github.io</div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h2>📸 How to Generate the OG Image</h2>
+            <p><strong>Option 1: Screenshot (Recommended)</strong></p>
+            <ol>
+                <li>Open this HTML file in your browser</li>
+                <li>Right-click on the card above and select "Inspect" or press F12</li>
+                <li>In DevTools, right-click the <code>&lt;div id="og-image"&gt;</code> element</li>
+                <li>Select "Capture node screenshot"</li>
+                <li>Save the image as <code>og-image.png</code> in the <code>public/</code> folder</li>
+            </ol>
+
+            <p><strong>Option 2: Browser Screenshot Extension</strong></p>
+            <ol>
+                <li>Use browser extensions like "Full Page Screen Capture" or "Nimbus Screenshot"</li>
+                <li>Capture the card element (1200x630px)</li>
+                <li>Save as <code>public/og-image.png</code></li>
+            </ol>
+
+            <p><strong>Option 3: Online Tool</strong></p>
+            <ol>
+                <li>Use online tools like <code>screenshotone.com</code> or <code>htmlcsstoimage.com</code></li>
+                <li>Upload this HTML or paste the code</li>
+                <li>Generate and download the image</li>
+                <li>Save as <code>public/og-image.png</code></li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>

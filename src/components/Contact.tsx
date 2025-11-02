@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Linkedin, Github } from 'lucide-react';
+import { Mail, MapPin, Phone, Linkedin, Github, Facebook } from 'lucide-react';
 
 export function Contact() {
   return (
@@ -82,6 +82,15 @@ export function Contact() {
               aria-label="GitHub"
             >
               <Github className="w-5 h-5" />
+            </a>
+            <a
+              href="https://web.facebook.com/musabibnusiraj"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md transition-all text-slate-700 dark:text-slate-200"
+              aria-label="Facebook"
+            >
+              <Facebook className="w-5 h-5" />
             </a>
           </div>
         </div>
