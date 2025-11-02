@@ -75,7 +75,7 @@ export function Contact() {
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="https://github.com/musab-ibnu-siraj"
+                href="https://github.com/musabibnusiraj"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-slate-700 hover:bg-blue-600 transition-all hover:scale-110 text-white"
