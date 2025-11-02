@@ -9,7 +9,7 @@ export function Hero() {
           <div className="flex flex-col md:flex-row md:flex-row-reverse items-center gap-8 relative">
             <div className="flex-shrink-0">
               <div className="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden ring-4 ring-white/30">
-                <img src="/3.png" alt="Musab Ibnu Siraj" className="w-full h-full object-cover" loading="eager" />
+                <img src="/profile-pic.png" alt="Musab Ibnu Siraj" className="w-full h-full object-cover" loading="eager" />
               </div>
 
               <div className="mt-4 text-center">
