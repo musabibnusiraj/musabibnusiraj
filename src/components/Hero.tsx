@@ -9,7 +9,7 @@ export function Hero() {
             <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 p-1">
               <div className="w-full h-full rounded-full overflow-hidden">
                 <img
-                  src="/3.png"
+                  src="/3 copy.png"
                   alt="M. Siraj Musab"
                   className="w-full h-full object-cover"
                 />
