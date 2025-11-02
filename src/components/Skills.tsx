@@ -71,8 +71,8 @@ export function Skills() {
       <div className="max-w-6xl mx-auto">
         <header className="flex flex-col md:flex-row items-start md:items-center justify-between mb-6">
           <div>
-            <h2 className="text-2xl md:text-3xl font-semibold text-slate-900">Skills & Expertise</h2>
-            <p className="mt-1 text-sm text-slate-500">Proficiency levels and years of experience</p>
+            <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-white">Skills & Expertise</h2>
+            <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">Proficiency levels and years of experience</p>
           </div>
 
           <div className="mt-4 md:mt-0 flex flex-wrap items-center gap-2">
@@ -100,20 +100,20 @@ export function Skills() {
           {filtered.map((category) => {
             const Icon = category.icon;
             return (
-              <div key={category.id} className="bg-white rounded-lg p-6 border border-slate-100 shadow-card">
+              <div key={category.id} className="bg-white dark:bg-slate-800 rounded-lg p-6 border border-slate-100 dark:border-slate-700 shadow-card">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2 rounded-lg bg-primary-50 text-primary-600">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-lg font-semibold text-slate-900">{category.title}</h3>
+                  <h3 className="text-lg font-semibold text-slate-900 dark:text-white">{category.title}</h3>
                 </div>
 
                 <div className="space-y-4">
                   {category.items.map((it) => (
                     <div key={it.name}>
                       <div className="flex items-center justify-between mb-1">
-                        <div className="text-sm text-slate-700 font-medium">{it.name}</div>
-                        <div className="text-xs text-slate-500">{it.years} yr</div>
+                        <div className="text-sm text-slate-700 dark:text-slate-200 font-medium">{it.name}</div>
+                        <div className="text-xs text-slate-500 dark:text-slate-400">{it.years} yr</div>
                       </div>
                       <div className="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-3">
                         <div className="h-3 rounded-full bg-primary-600 dark:bg-primary-600 transition-all" style={{ width: `${it.level}%` }} />

@@ -11,10 +11,17 @@ export function Hero() {
               <div className="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden ring-4 ring-white/30">
                 <img src="/3.png" alt="Musab Ibnu Siraj" className="w-full h-full object-cover" loading="eager" />
               </div>
+
+              <div className="mt-4 text-center">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-snug">
+                  M. S. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Musab</span>
+                </h2>
+                <p className="mt-1 text-sm md:text-base text-white/80">Senior Software Engineer</p>
+              </div>
             </div>
 
             <div className="flex-1 text-left md:text-left">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-extrabold">Senior Full-Stack Engineer</h1>
+              <h1 className="sr-only">Senior Software Engineer</h1>
 
               <div className="mt-3 flex items-center flex-wrap gap-3">
                 <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-sm font-medium">
