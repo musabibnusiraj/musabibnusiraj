@@ -2,26 +2,27 @@ import { Briefcase } from 'lucide-react';
 
 const experiences = [
   {
-    title: 'Senior Full-Stack Engineer',
+    title: 'Senior Software Engineer',
     company: 'Imara Software Solutions',
     period: 'February 2023 – Present',
     responsibilities: [
-      'Developed enterprise-level web and mobile applications using Laravel, Flutter, React, Angular, and Node.js',
-      'Led AI integration and optimized system performance across frontend and backend components',
-      'Utilized AWS (EC2, S3, RDS, CodeCommit), Docker, and CI/CD pipelines for efficient deployment of full-stack applications'
+      'Led full-stack development of enterprise-level web and mobile applications using Laravel, Flutter, React, Angular, and Node.js',
+      'Spearheaded AI integration initiatives and optimized system performance across frontend and backend components',
+      'Architected and deployed scalable solutions using AWS (EC2, S3, RDS, CodeCommit), Docker, and CI/CD pipelines'
     ]
   },
   {
-    title: 'Full-Stack Engineer',
+    title: 'Software Engineer',
     company: 'Imara Software Solutions',
     period: 'January 2021 – February 2023',
     responsibilities: [
-      'Built and maintained web and mobile applications using Flutter, Laravel, React, Angular, and Node.js',
-      'Integrated AI features and enhanced performance optimization across full-stack solutions'
+      'Led full-stack development and maintenance of web and mobile applications using Flutter, Laravel, React, Angular, and Node.js',
+      'Integrated AI features and enhanced performance optimization across full-stack solutions',
+      'Collaborated with stakeholders to translate business requirements into technical implementations'
     ]
   },
   {
-    title: 'Full-Stack Developer',
+    title: 'Software Developer',
     company: 'Imara Software Solutions',
     period: 'November 2018 – January 2021',
     responsibilities: [

@@ -28,7 +28,7 @@ const skillCategories = [
     icon: Server,
     items: [
       { name: 'APIs & Microservices', level: 82, years: 5 },
-      { name: 'MySQL / Postgres ', level: 78, years: 5 },
+      { name: 'MySQL / Postgres ', level: 82, years: 5 },
       { name: 'MongoDB / Firebase / Supabase', level: 70, years: 3 }
     ]
   },
@@ -55,7 +55,7 @@ const skillCategories = [
     title: 'Databases',
     icon: Database,
     items: [
-      { name: 'MySQL / Postgres ', level: 78, years: 5 },
+      { name: 'MySQL / Postgres ', level: 82, years: 5 },
       { name: 'MongoDB / Firebase / Supabase', level: 70, years: 3 }
     ]
   }

@@ -38,10 +38,10 @@ export function Hero() {
                 </span>
 
 
-                <p className="text-white/95 text-base md:text-lg lg:text-xl font-medium">building reliable products at scale</p>
+                <p className="text-white/95 text-base md:text-lg lg:text-xl font-medium">Building reliable products at scale</p>
               </div>
 
-              <p className="mt-4 text-white/90 max-w-xl">I design and ship production-ready systems using TypeScript, React, Node, Flutter, Laravel and AWS. I focus on performance, observability, and developer experience.</p>
+              <p className="mt-4 text-white/90 max-w-xl">I design and ship production-ready systems using  Flutter, Laravel, React, Angular, Node, and AWS. I focus on performance, observability, and developer experience.</p>
 
               <div className="mt-6 flex flex-wrap gap-3">
                 <a href="mailto:musab.dot@gmail.com" className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-white text-slate-900 font-medium hover:opacity-95">
