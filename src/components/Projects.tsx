@@ -23,6 +23,19 @@ const projects = [
             // { label: 'Website', href: 'http://mail-fast.test/' }
         ],
     },
+    {
+        id: 'addon-poze', // unique slug-like id
+        title: 'Addon Poze',
+        subtitle: 'Laravel package for inventory & purchase management',
+        description:
+            'An inventory & purchase order Laravel package with advanced features: permission control, vendor management, import/export and UI modules to quickly add PO flows to Laravel apps.',
+        image: '/projects/addon-poze.png',
+        tags: ['Laravel', 'PHP', 'Inventory', 'Package', 'B2B'],
+        links: [
+            //   { label: 'Repository', href: 'https://github.com/your-org/addon-poze' },
+            //   { label: 'Docs', href: 'https://your-docs-site.example.com/addon-poze' }
+        ],
+    },
     // Add more working projects here
 ];
 
