@@ -8,6 +8,11 @@ const projects = [
         description:
             'Cross-platform Flutter app with Laravel backend. Engineering focus on API-first design, JWT auth, Stripe payments, and subscription management. Includes marketing landing site and enterprise-grade architecture.',
         image: '/projects/checklogix.png',
+        // 'role' describes the scope of my involvement. Use 'Full-stack' for projects where
+        // I worked on both frontend and backend; use 'Frontend' or 'Backend' if my work
+        // was limited to one side. Add '(partial)' when I contributed but wasn't the primary
+        // owner.
+        role: 'Full-stack',
         tags: ['Flutter', 'Laravel', 'API', 'AWS', 'Stripe', 'Subscription', 'Cross-platform'],
         links: [{ label: 'App', href: 'https://app.checklogix.org/' }, { label: 'Website', href: 'https://checklogix.org/' }],
     },
@@ -18,6 +23,7 @@ const projects = [
         description:
             'Built with WordPress, MailFast uses CourierAPI for shipping, integrates PayPal, and provides competitor price comparison, QR code generation, and parcel booking features.',
         image: '/projects/mailfast.png',
+        role: 'Full-stack (partial)',
         tags: ['WordPress', 'CourierAPI', 'PayPal', 'Competitor Comparison', 'QR Code', 'Parcel Booking', 'Shipping', 'Web App', 'Calculator', 'Logistics'],
         links: [
             // { label: 'Website', href: 'http://mail-fast.test/' }
@@ -61,12 +67,20 @@ export function Projects() {
                                 <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">{p.subtitle}</p>
                                 <p className="mt-3 text-slate-700 dark:text-slate-200 text-sm">{p.description}</p>
 
-                                <div className="mt-3 flex flex-wrap gap-2">
-                                    {p.tags.map((t) => (
-                                        <span key={t} className="inline-flex items-center gap-2 text-xs font-medium px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200">
-                                            {t}
+                                <div className="mt-3 flex flex-wrap gap-2 items-center">
+                                    {/* {p.role && (
+                                        <span className="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1 rounded-full bg-primary-50 text-primary-600">
+                                            {p.role}
                                         </span>
-                                    ))}
+                                    )} */}
+
+                                    <div className="flex flex-wrap gap-2">
+                                        {p.tags.map((t) => (
+                                            <span key={t} className="inline-flex items-center gap-2 text-xs font-medium px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200">
+                                                {t}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
 
                                 <div className="mt-4 flex items-center gap-3">
