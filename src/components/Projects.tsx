@@ -6,10 +6,22 @@ const projects = [
         title: 'CheckLogix',
         subtitle: 'Full-Stack Cross-Platform Application with Landing Website',
         description:
-            'Cross-platform Flutter app with Laravel backend. Engineering focus on API-first design, JWT auth, and performant mobile/web UX. Includes marketing landing site and enterprise-grade architecture.',
+            'Cross-platform Flutter app with Laravel backend. Engineering focus on API-first design, JWT auth, Stripe payments, and subscription management. Includes marketing landing site and enterprise-grade architecture.',
         image: '/projects/checklogix.png',
-        tags: ['Flutter', 'Laravel', 'API', 'AWS', 'Cross-platform'],
-        links: [{ label: 'Live App', href: 'https://app.checklogix.org/' }, { label: 'Website', href: 'https://checklogix.org/' }],
+        tags: ['Flutter', 'Laravel', 'API', 'AWS', 'Stripe', 'Subscription', 'Cross-platform'],
+        links: [{ label: 'App', href: 'https://app.checklogix.org/' }, { label: 'Website', href: 'https://checklogix.org/' }],
+    },
+    {
+        id: 'mailfast',
+        title: 'MailFast',
+        subtitle: 'Next Day International Parcel Booking Platform',
+        description:
+            'Built with WordPress, MailFast uses CourierAPI for shipping, integrates PayPal, and provides competitor price comparison, QR code generation, and parcel booking features.',
+        image: '/projects/mailfast.png',
+        tags: ['WordPress', 'CourierAPI', 'PayPal', 'Competitor Comparison', 'QR Code', 'Parcel Booking', 'Shipping', 'Web App', 'Calculator', 'Logistics'],
+        links: [
+            // { label: 'Website', href: 'http://mail-fast.test/' }
+        ],
     },
     // Add more working projects here
 ];
