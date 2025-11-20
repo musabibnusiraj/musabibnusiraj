@@ -42,21 +42,90 @@ const projects = [
             //   { label: 'Docs', href: 'https://your-docs-site.example.com/addon-poze' }
         ],
     },
+    // {
+    //     id: 'mi-invitation-platform',
+    //     title: 'MI Invitation Platform',
+    //     subtitle: 'Full-Stack Event Management SaaS with Mobile App & Admin Dashboard',
+    //     description:
+    //         'Complete event invitation platform featuring a Flutter mobile app (iOS/Android) and React-based admin dashboard. Built on MERN stack with MongoDB for data persistence, Express.js REST APIs, and Node.js backend. Admin panel includes user management, invitation analytics, content moderation, and real-time monitoring. Mobile app features AWS Amplify for storage, OTP authentication, contact integration, and interactive engagement tools.',
+    //     image: '/projects/epic-invitation.png',
+    //     role: 'Full-stack',
+    //     tags: ['Flutter', 'React', 'Node.js', 'Express', 'MongoDB', 'MERN Stack', 'AWS S3', 'Admin Dashboard', 'REST API', 'Cross-platform', 'SaaS'],
+    //     links: [
+    //         // { label: 'Admin Dashboard', href: 'https://admin.epicinvitation.com/' },
+    //         // { label: 'App Store', href: 'https://apps.apple.com/app/epic-invitation/id...' },
+    //         // { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=...' }
+    //     ],
+    // },
+    // {
+    //     id: 'mi-invitation-engagement-platform',
+    //     title: 'MI Invitation & Engagement Platform',
+    //     subtitle: 'Multi-Platform Event Invitation SaaS with Gamification & Rewards System',
+    //     description:
+    //         'Enterprise-grade invitation and engagement platform featuring a Flutter mobile app (iOS/Android), React admin dashboard, and Node.js backend. The system enables businesses to create and distribute marketing invitations via SMS to mobile contacts. Recipients earn points by viewing invitations, clicking advertisement links, and engaging with product promotions. Points can be redeemed through in-app games to win real prizes. The admin dashboard provides comprehensive management of invitations, user engagement analytics, point systems, prize configuration, game templates, advertisement tracking, and real-time monitoring. Built with MERN stack, AWS S3 for media storage, OTP authentication, contact integration, and RESTful APIs for seamless cross-platform communication.',
+    //     image: '/projects/epic-invitation.png',
+    //     role: 'Full-Stack Developer & System Architect',
+    //     tags: [
+    //         'Flutter',
+    //         'React',
+    //         'TypeScript',
+    //         'Node.js',
+    //         'Express.js',
+    //         'MongoDB',
+    //         'MERN Stack',
+    //         'AWS S3',
+    //         'REST API',
+    //         'Gamification',
+    //         'SMS Integration',
+    //         'OTP Authentication',
+    //         'Admin Dashboard',
+    //         'Points & Rewards',
+    //         'Analytics',
+    //         'Cross-platform',
+    //         'SaaS',
+    //         'Mobile Development'
+    //     ],
+    //     features: [
+    //         'SMS-based invitation distribution from mobile contacts',
+    //         'Points & rewards system for user engagement',
+    //         'Interactive games with real prize redemption',
+    //         'Advertisement link tracking and analytics',
+    //         'Multi-tenant admin dashboard',
+    //         'Real-time engagement monitoring',
+    //         'Prize and game template management',
+    //         'Contact integration and management',
+    //         'Comprehensive user action history',
+    //         'Credit and notification systems'
+    //     ],
+    //     technicalHighlights: [
+    //         'Microservices architecture with Docker containerization',
+    //         'JWT-based authentication with OTP verification',
+    //         'AWS S3 integration for scalable media storage',
+    //         'Real-time analytics and reporting',
+    //         'Responsive admin panel with advanced filtering',
+    //         'RESTful API design with Express.js',
+    //         'MongoDB with multi-tenant data isolation',
+    //         'Flutter cross-platform mobile development',
+    //         'TypeScript for type-safe frontend development'
+    //     ],
+    //     links: [
+    //         // { label: 'Admin Dashboard', href: 'https://admin.mi-invitation.com/' },
+    //         // { label: 'API Documentation', href: 'https://docs.mi-invitation.com/' },
+    //         // { label: 'App Store', href: 'https://apps.apple.com/app/mi-invitation/id...' },
+    //         // { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=...' }
+    //     ],
+    // },
     {
         id: 'mi-invitation-platform',
-        title: 'MI Invitation Platform',
-        subtitle: 'Full-Stack Event Management SaaS with Mobile App & Admin Dashboard',
+        title: 'MI Invitation & Rewards Platform',
+        subtitle: 'SaaS Platform with Gamification & SMS Marketing',
         description:
-            'Complete event invitation platform featuring a Flutter mobile app (iOS/Android) and React-based admin dashboard. Built on MERN stack with MongoDB for data persistence, Express.js REST APIs, and Node.js backend. Admin panel includes user management, invitation analytics, content moderation, and real-time monitoring. Mobile app features AWS Amplify for storage, OTP authentication, contact integration, and interactive engagement tools.',
+            'Invitation platform with Flutter app and React dashboard. Send SMS invitations, earn points from engagement and ad views, win prizes through games. Includes admin panel for management and analytics. MERN stack with AWS S3.',
         image: '/projects/epic-invitation.png',
-        role: 'Full-stack',
-        tags: ['Flutter', 'React', 'Node.js', 'Express', 'MongoDB', 'MERN Stack', 'AWS S3', 'Admin Dashboard', 'REST API', 'Cross-platform', 'SaaS'],
-        links: [
-            // { label: 'Admin Dashboard', href: 'https://admin.epicinvitation.com/' },
-            // { label: 'App Store', href: 'https://apps.apple.com/app/epic-invitation/id...' },
-            // { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=...' }
-        ],
-    },
+        role: 'Full-Stack Developer',
+        tags: ['Flutter', 'React', 'Node.js', 'MongoDB', 'AWS S3', 'Gamification', 'SMS Marketing'],
+        links: []
+    }
     // Add more working projects here
 ];
 
