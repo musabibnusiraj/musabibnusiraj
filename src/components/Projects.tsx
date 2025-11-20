@@ -43,8 +43,8 @@ const projects = [
         ],
     },
     {
-        id: 'epic-invitation-platform',
-        title: 'Epic Invitation Platform',
+        id: 'mi-invitation-platform',
+        title: 'MI Invitation Platform',
         subtitle: 'Full-Stack Event Management SaaS with Mobile App & Admin Dashboard',
         description:
             'Complete event invitation platform featuring a Flutter mobile app (iOS/Android) and React-based admin dashboard. Built on MERN stack with MongoDB for data persistence, Express.js REST APIs, and Node.js backend. Admin panel includes user management, invitation analytics, content moderation, and real-time monitoring. Mobile app features AWS Amplify for storage, OTP authentication, contact integration, and interactive engagement tools.',
