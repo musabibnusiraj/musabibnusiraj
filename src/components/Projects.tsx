@@ -42,6 +42,21 @@ const projects = [
             //   { label: 'Docs', href: 'https://your-docs-site.example.com/addon-poze' }
         ],
     },
+    {
+        id: 'epic-invitation-platform',
+        title: 'Epic Invitation Platform',
+        subtitle: 'Full-Stack Event Management SaaS with Mobile App & Admin Dashboard',
+        description:
+            'Complete event invitation platform featuring a Flutter mobile app (iOS/Android) and React-based admin dashboard. Built on MERN stack with MongoDB for data persistence, Express.js REST APIs, and Node.js backend. Admin panel includes user management, invitation analytics, content moderation, and real-time monitoring. Mobile app features AWS Amplify for storage, OTP authentication, contact integration, and interactive engagement tools.',
+        image: '/projects/epic-invitation.png',
+        role: 'Full-stack',
+        tags: ['Flutter', 'React', 'Node.js', 'Express', 'MongoDB', 'MERN Stack', 'AWS S3', 'Admin Dashboard', 'REST API', 'Cross-platform', 'SaaS'],
+        links: [
+            // { label: 'Admin Dashboard', href: 'https://admin.epicinvitation.com/' },
+            // { label: 'App Store', href: 'https://apps.apple.com/app/epic-invitation/id...' },
+            // { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=...' }
+        ],
+    },
     // Add more working projects here
 ];
 

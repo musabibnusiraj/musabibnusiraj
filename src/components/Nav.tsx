@@ -9,7 +9,9 @@ export function Nav() {
         <header className="w-full sticky top-0 z-30 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
             <div className="container mx-auto flex items-center justify-between py-3">
                 <a href="#" aria-label="Home" className="inline-flex items-center gap-2">
-                    {/* <div className="w-8 h-8 rounded-full bg-primary-600 text-white flex items-center justify-center font-semibold">MS</div> */}
+                    <span className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white">
+                        M. S. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Musab</span>
+                    </span>
                 </a>
 
                 <div className="flex items-center gap-4">
