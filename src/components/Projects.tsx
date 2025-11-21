@@ -4,7 +4,7 @@ const projects = [
     {
         id: 'checklogix',
         title: 'CheckLogix',
-        subtitle: 'Full-Stack Cross-Platform Application with Landing Website',
+        subtitle: 'Checklogix, documentation software, compliance management, log management, process documentation',
         description:
             'Cross-platform Flutter app with Laravel backend. Engineering focus on API-first design, JWT auth, Stripe payments, and subscription management. Includes marketing landing site and enterprise-grade architecture. AI-powered checklist and log form creation for enhanced automation.',
         image: '/projects/checklogix.png',
@@ -48,6 +48,30 @@ const projects = [
         role: 'Full-Stack Developer',
         tags: ['Flutter', 'React', 'Node.js', 'MongoDB', 'AWS S3', 'Gamification', 'SMS Marketing'],
         links: []
+    },
+    {
+        "id": "jarvis-imara",
+        "title": "Jarvis (HUBEUROPE)",
+        "subtitle": "Enterprise Logistics & Courier Management Platform",
+        "description": "Comprehensive logistics and courier management system built with Laravel and Vue.js. Features include shipment tracking, customer/billing management, courier API integration, and financial reporting. Integrates Xero for accounting and AWS S3 for storage, focusing on data management and operational efficiency with server-side rendered datatables and RBAC.",
+        "image": "/projects/jarvis-imara.png",
+        "role": "Full-stack Developer",
+        "tags": [
+            "Laravel",
+            "Vue.js",
+            "PHP",
+            "Logistics",
+            "Courier Management",
+            "ERP",
+            "Billing System",
+            "Xero",
+            "AWS S3",
+            "Courier API",
+            "API Integration",
+            "PDF Generation",
+            "Datatables"
+        ],
+        "links": []
     }
     // Add more working projects here
 ];
