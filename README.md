@@ -50,18 +50,6 @@
 
 ---
 
-## 📊 GitHub Stats
-
-```text
-⭐ Public Repositories
-🔭 Active Projects
-👨‍💻 Contributions
-```
-
-*(You can replace this with GitHub stats badges later.)*
-
----
-
 ## 🌱 Currently Learning
 
 * Advanced Flutter Animations
