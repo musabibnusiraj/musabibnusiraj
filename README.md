@@ -7,7 +7,7 @@
 ## 👨‍💻 About Me
 
 * 🔭 I’m currently working as a **Senior Software Engineer**
-* 💼 5+ years of experience in Web & Mobile Application Development
+* 💼 7+ years of experience in Web & Mobile Application Development
 * 📱 Specialized in **Flutter** (Android • iOS • Web • Desktop)
 * 🌐 Full-stack expertise in modern web technologies
 * 🏥 Worked with Healthcare, E-commerce & Finance domains
