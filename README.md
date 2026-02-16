@@ -75,6 +75,12 @@
 
 ---
 
+## 📊 GitHub Stats
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=musabibnusiraj&theme=radical)
+
+---
+
 ## 📫 How to Reach Me
 
 * 📧 Email: [your@email.com](mailto:your@email.com)
