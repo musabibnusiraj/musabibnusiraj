@@ -83,10 +83,10 @@
 
 ## 📫 How to Reach Me
 
-* 📧 Email: [your@email.com](mailto:your@email.com)
+* 📧 Email: [musab.dot@gmail.com](mailto:musab.dot@gmail.com)
 * 📱 Phone: +94 7 555 13162
-* 💼 LinkedIn: linkedin.com/in/yourprofile
-* 🌍 Portfolio: yourwebsite.com
+* 💼 LinkedIn: [linkedin.com/in/musab-ibnu-siraj](https://www.linkedin.com/in/musab-ibnu-siraj)
+* 🌍 Portfolio: [musabibnusiraj.github.io](https://musabibnusiraj.github.io/)
 
 ---
 
