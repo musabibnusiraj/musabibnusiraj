@@ -1,6 +1,6 @@
 # Hi there 👋 I'm Musab
 
-🚀 **Senior Software Engineer | Full-Stack Developer | Flutter Specialist**
+🚀 **Senior Software Engineer | Full-Stack Developer | Flutter & Laravel Specialist**
 
 ---
 
